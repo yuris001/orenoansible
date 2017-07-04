@@ -1,0 +1,12 @@
+---
+- name: nginxのレポジトリ設置
+  template:
+    src: ../../../template/nginx.repo
+    dest: /etc/yum.repo.d/nginx.repo
+
+- name: nginxのインストール
+  yum: name=nginx state=installed
+
+
+
+

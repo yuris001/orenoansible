@@ -1,0 +1,5 @@
+---
+- name: nginxのセットアップ
+  hosts: vagrant03
+  roles:
+    - nginx
