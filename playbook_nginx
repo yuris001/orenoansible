@@ -1,5 +1,5 @@
 ---
 - name: nginxのセットアップ
-  hosts: vagrant03
+  hosts: '{{ host }}'
   roles:
     - nginx
